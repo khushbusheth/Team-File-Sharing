@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title></title>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="styles/tut.css" rel="stylesheet" />
+	<link href="styles/tooltips.css" rel="stylesheet" /><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<style type="text/css">body {
+margin:0px auto;
+text-align: center;
+background-image:url('4.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+
+form { display: inline-block; }
+
+div {
+text-align:center;
+width: 260px;
+height: 180px;
+box-shadow: 10px 10px 5px #888888;
+background-color: #D3D3D3;
+}
+
+h1 {
+text-shadow: 2px 2px 5px Blue;
+    color: Light-Blue;
+    text-align: center;
+}
+p{ color: blue; }
+p1 {color:black;
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+}
+.left {
+    position: absolute;
+    left: -40px;
+}
+.search-box,.close-icon,.search-wrapper {
+	position: relative;
+}
+.search-wrapper {
+	width: 150px;
+	margin: auto;
+	margin-top: 20px;
+}
+.search-box {
+	width: 90%;
+	border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 5px;
+}
+.search-box:focus {
+	box-shadow: 0 0 5px 5px #b0e0ee;
+	border: 0.5px #bebede;
+}
+.close-icon {
+	border:1px solid transparent;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+}
+.close-icon:after {
+	content: "X";
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background-color: gray;
+	z-index:1;
+	right: 20px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 2px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 12px;
+	box-shadow: 0 0 2px white;
+	cursor: pointer;
+}
+.search-box:not(:valid) ~ .close-icon {
+	display: none;
+}
+	</style>
+	<script>
+	function eraseusername() {
+    document.getElementById("user name").value = "";
+}
+function erasepwd() {
+    document.getElementById("pwd").value = "";
+}
+	</script>
+</head>
+<body>
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<h1>Expressions!</h1>
+<p1><strong>Create your own photo album.</strong></p1>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p><br />
+&nbsp;</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p>Enter your email id and password to Log in</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p><!-- <div class="container"  align='centre'> --></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<div class="search-wrapper">
+<form class="form-inline left" role="form" action="login_page.php" method="post" name="loginpage">
+<div class="form-group">
+<p></p>
+
+<p></p>
+
+<p><input class="search-box form-control" id="user name" name="username" placeholder="Enter Email ID" required="" type="text" /><button class="close-icon" onclick="javascript:eraseusername();" title="clear field" type="button"></button></p>
+
+<p><input class="search-box form-control" id="pwd" name="pwd" placeholder="Enter Password" required="" type="password" /><button class="close-icon" onclick="javascript:erasepwd();" title="clear field" type="button"></button></p>
+
+<p><br />
+<input class="btn btn-info btn-lg" type="submit" value="Log in" title="submit"\></p>
+</div>
+</form>
+</div>
+
+<p></p>
+</body>
+</html>

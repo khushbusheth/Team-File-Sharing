@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title></title>
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="styles/tut.css" rel="stylesheet" />
+	<link href="styles/tooltips.css" rel="stylesheet" /><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<style type="text/css">body {
+margin:0px auto;
+text-align: center;
+background-image:url('floral.jpeg');
+background-repeat:no-repeat;
+background-size:cover;
+
+}
+
+form {display: inline-block;}
+
+div {
+text-align:center;
+width: 250px;
+height: 350px;
+box-shadow: 10px 10px 5px #888888;
+background-color: pink;
+}
+h1 {
+text-shadow: 2px 2px 5px #FFFFFF;
+    color: Green;
+    text-align: center;
+}
+p{ color: green; }
+p1 {color:maroon;
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+
+.left {
+    position: absolute;
+    left: -40px;
+}
+.search-box,.close-icon,.search-wrapper {
+	position: relative;
+}
+.search-wrapper {
+	width: 150px;
+	margin: auto;
+	margin-top: 20px;
+}
+.search-box {
+	width: 90%;
+	border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 5px;
+}
+.search-box:focus {
+	box-shadow: 0 0 5px 5px #b0e0ee;
+	border: 0.5px #bebede;
+}
+.close-icon {
+	border:1px solid transparent;
+	background-color: transparent;
+	display: inline-block;
+	vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+}
+.close-icon:after {
+	content: "X";
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background-color: #CC3300;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 2px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 12px;
+	box-shadow: 0 0 2px #E50F0F;
+	cursor: pointer;
+}
+.search-box:not(:valid) ~ .close-icon {
+	display: none;
+}
+	</style>
+	<script>
+	function warning(){
+	alert("Note: The user must have a password with at least 1 uppercase letter, 1 lowercase letter, 1 number and 1 special character.");
+	}
+	function eraseText1() {
+    document.getElementById("first name").value = "";
+}
+function eraseText2() {
+    document.getElementById("last name").value = "";
+}
+function eraseText3() {
+    document.getElementById("email id").value = "";
+}
+function eraseText4() {
+    document.getElementById("password").value = "";
+}
+function eraseText5() {
+    document.getElementById("re-password").value = "";
+}
+function match(){
+var pwd= document.getElementById("password").value;
+var repwd= document.getElementById("re-password").value
+if(pwd === repwd)
+{
+	document.getElementById('signupform').action="signup.php";
+}
+else
+{
+	alert("Both the passwords do not match!! Check again and enter correctly.");
+}
+}
+</script>
+</head>
+<body>
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<h1>Expressions!</h1>
+<p1><strong>Create your own photo album.</strong></p1>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p><br />
+&nbsp;</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p>Fill in your details to create an account!</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p><!-- <div class="container"  align='centre'> --></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<div class="search-wrapper">
+<form class="form-inline left" role="form" method ="post" id="signupform">
+<div class="form-group">
+<p></p>
+
+<p></p>
+
+<p><input class="search-box form-control" id="first name" name="fname" placeholder="Enter First Name" required="" type="first name" /><button class="close-icon" onclick="javascript:eraseText1();" title="clear field" type="button"></button></p>
+
+<p><input class="search-box form-control" id="last name" name="lname" placeholder="Enter Last Name" required="" type="last name" /><button class="close-icon" onclick="javascript:eraseText2();" title="clear field" type="button"></button></p>
+
+<p><input class="search-box form-control" id="email id" name="emailid" placeholder="Enter Email ID" required="" type="email id" /><button class="close-icon" onclick="javascript:eraseText3();" title="clear field" type="button"></button></p>
+
+<p><input class="search-box form-control" id="password" name="pwd" placeholder="Enter Password" required="" type="password" onclick="javascript:warning();"  /><button class="close-icon" onclick="javascript:eraseText4();" title="clear field" type="button"></button></p>
+
+<p><input class="search-box form-control" id="re-password" name="repwd" placeholder="Re-enter Password" required="" type="password" /><button class="close-icon" onclick="javascript:eraseText5();" title="clear field" type="button"></button></p>
+
+<p><br />
+<input class="btn btn-info btn-lg" title="submit" type="submit" value="Submit" onclick="javascript:match();" /> <input class="btn btn-info btn-lg " title="clear all info" type="reset" value="Clear" /> <!-- </div> --></p>
+</div>
+</form>
+</div>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+</body>
+</html>
